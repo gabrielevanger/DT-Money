@@ -1,9 +1,19 @@
+import { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighLight, TransactionsContainer, TransactionsTable } from "./styles";
 
 export function Transactions() {
+ useEffect(() => {
+  fetch('http://localhost:3333/transactions')
+      .then(response => {
+        response.text().then(data => {
+          console.log(data)
+        })
+  })
+ },[])
+
   return (
     <div>
       <Header />
