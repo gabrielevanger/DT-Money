@@ -10,13 +10,22 @@
         },
 
         {
-            "id": 1,
+            "id": 2,
             "description": "Hamburguer",
-            "type": "outcomer",
+            "type": "outcome",
             "category": "Alimentação",
             "price": 50,
             "createdAt":"2023-06-20T18:40:14.136Z"
-        }
+        },
         
+        {
+            "id": 3,
+            "description": "PEUGEOT",
+            "type": "outcome",
+            "category": "carro",
+            "price": 1500,
+            "createdAt":"2023-06-20T18:24:14.136Z"
+        }
+
     ]
 }
